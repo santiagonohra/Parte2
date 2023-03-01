@@ -12,7 +12,7 @@
         
         "events": [{
            "function": "lambda1.lambda_handler", // The function to execute
-           "expression": "cron(26 20 * * ? *)" // When to execute it (in cron or rate format)
+           "expression": "cron(28 20 * * ? *)" // When to execute it (in cron or rate format)
        }]
     }
 }
