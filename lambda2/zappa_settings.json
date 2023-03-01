@@ -1,0 +1,24 @@
+{
+    "dev": {
+        "app_function": "lambda2.lambda_handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "lambda2",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-kc7xwolhc",
+        "role_name": "LabRole",
+        "keep_warm": false,
+        "manage_roles": false,
+        "apigateway_enabled": false,
+        
+        "events": [{
+            "function": "lambda2.lambda_handler",
+            "event_source": {
+                  "arn":  "arn:aws:s3:::dolarraw",
+                  "events": [
+                    "s3:ObjectCreated:*" // Supported event types: http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#supported-notification-event-types
+                  ],
+               }
+            }],
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "app_function": "lambda1.lambda_handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "parte2",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-o3j0ho40l",
+        "role_name": "LabRole",
+        "keep_warm": false,
+        "manage_roles": false,
+        "apigateway_enabled": false,
+        
+    }
+}
