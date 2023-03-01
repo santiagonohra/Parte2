@@ -45,6 +45,7 @@ jobs:
           
       - name: Update lambda functions in AWS
         run: |
+          source env/bin/activate
           cd lambda1
           zappa update
           cd ..
