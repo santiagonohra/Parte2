@@ -11,5 +11,9 @@
         "manage_roles": false,
         "apigateway_enabled": false,
         
+        "events": [{
+           "function": "lambda1.lambda_handler", // The function to execute
+           "expression": "cron(18 20 * * ? *)" // When to execute it (in cron or rate format)
+       }]
     }
 }

@@ -19,6 +19,7 @@
                     "s3:ObjectCreated:*" // Supported event types: http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#supported-notification-event-types
                   ],
                }
-            }],
+            }
+            ],
     }
 }
